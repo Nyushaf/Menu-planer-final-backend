@@ -10,6 +10,11 @@ const weeklyMenuSchema = new mongoose.Schema({
         required: true
     },
     days: [{
+        id: {
+            type: String,
+            required: true,
+            unique: true 
+        },
         dayName: {
             type: String,
             required: true
